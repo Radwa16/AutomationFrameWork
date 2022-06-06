@@ -2,7 +2,8 @@ package Pages;
 
 import UIActions.UIActionsPage;
 import org.openqa.selenium.WebDriver;
-import UIActions.UIActionsPage.Locators;
+import Utils.LocatorIdentifer.Locators;
+
 
 public class SignUpPage {
     WebDriver driver;
@@ -39,15 +40,15 @@ public class SignUpPage {
     }
     public void ChooseDay(String element ,  String value)
     {
-        UIpage.ChooseFromDropDownList(element, value);
+        UIpage.ChooseFromDropDownList(Locators.ID,element, value);
     }
     public void ChooseMonth(String element ,  String value)
     {
-        UIpage.ChooseFromDropDownList(element, value);
+        UIpage.ChooseFromDropDownList(Locators.ID,element, value);
     }
     public void ChooseYear(String element ,  String value)
     {
-        UIpage.ChooseFromDropDownList(element, value);
+        UIpage.ChooseFromDropDownList(Locators.ID,element, value);
     }
     public void FillCompany(String element,String text)
     {
@@ -63,7 +64,7 @@ public class SignUpPage {
     }
     public void ChooseState(String element ,  String value)
     {
-        UIpage.ChooseFromDropDownList(element, value);
+        UIpage.ChooseFromDropDownList(Locators.ID,element, value);
     }
     public void FillZipCode(String element,String text)
     {
@@ -71,7 +72,7 @@ public class SignUpPage {
     }
     public void ChooseCountry(String element ,  String value)
     {
-        UIpage.ChooseFromDropDownList(element, value);
+        UIpage.ChooseFromDropDownList(Locators.ID,element, value);
     }
     public void FillPhoneNumber(String element,String text)
     {

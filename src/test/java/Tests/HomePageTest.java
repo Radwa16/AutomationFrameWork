@@ -35,9 +35,10 @@ public class HomePageTest {
     @Test
     public void HomeTest()
     {
+        String HoveredElement = "//div[@id = \"block_top_menu\"]//descendant :: li/a[@title= \"Women\"]";
+        String ClickedElement = "//div[@id = \"block_top_menu\"]//descendant :: li/a[@title= \"Blouses\"]";
         Homy = new HomePage(driver);
-//        Homy.ChooseBlousesCatregory("//div[@id = \"block_top_menu\"]//descendant :: li/a[@title= \"Women\"]"
-//                ,"//div[@id = \"block_top_menu\"]//descendant :: li/a[@title= \"Blouses\"]");
+        Homy.ChooseBlousesCatregory(HoveredElement,ClickedElement);
         Homy.PressOnSignUpButton("a.login");
     }
     @Test(dependsOnMethods = { "HomeTest" })
@@ -75,8 +76,8 @@ public class HomePageTest {
 //    public void LoginTest()
 //    {
 //        login = new LoginPage(driver);
-//        login.EnterEmail("email","Radwaaaa@gmail.com");
-//        login.EnterPassword("passwd","123456");
+//        login.EnterEmail("email",JsonReader.email);
+//        login.EnterPassword("passwd",JsonReader.password);
 //        login.ClickOnSignin("SubmitLogin");
 //    }
 }

@@ -4,7 +4,7 @@ import UIActions.UIActionsPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import UIActions.UIActionsPage.Locators;
+import Utils.LocatorIdentifer.Locators;
 
 public class SignUpLoginPage {
     WebDriver driver;

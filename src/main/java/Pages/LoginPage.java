@@ -1,7 +1,7 @@
 package Pages;
 
 import UIActions.UIActionsPage;
-import UIActions.UIActionsPage.Locators;
+import Utils.LocatorIdentifer.Locators;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage {

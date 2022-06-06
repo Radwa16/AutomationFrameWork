@@ -1,7 +1,7 @@
 package Pages;
 
 import UIActions.UIActionsPage;
-import UIActions.UIActionsPage.Locators;
+import Utils.LocatorIdentifer.Locators;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
@@ -20,7 +20,7 @@ public class HomePage {
     }
     public  BlousesPage ChooseBlousesCatregory(String Hoveredelement , String clickedelement)
     {
-        UIPage.Hovering(Hoveredelement,clickedelement);
+        UIPage.Hovering(Locators.Xpath,Hoveredelement,clickedelement);
         return new BlousesPage(driver);
     }
 }
